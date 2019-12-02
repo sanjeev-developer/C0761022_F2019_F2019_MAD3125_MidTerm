@@ -146,8 +146,6 @@ public class Jsondatum {
         return commissionPercent;
     }
 
-    public void setCommissionPercent(Integer commissionPercent) {
-        this.commissionPercent = commissionPercent;
-    }
+    
 
 }
