@@ -7,3 +7,6 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.midtermtest.R;
 
 public class Splash extends AppCompatActivity {
+    private static final String TAG = "Splash";
+
+}
