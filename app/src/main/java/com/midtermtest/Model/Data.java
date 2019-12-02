@@ -8,17 +8,16 @@ import java.util.ArrayList;
 
 public class Data {
 
-        @SerializedName("jsondata")
-        @Expose
-        private ArrayList<Jsondatum> jsondata = null;
+    @SerializedName("jsondata")
+    @Expose
+    private ArrayList<Jsondatum> jsondata = null;
 
-        public ArrayList<Jsondatum> getJsondata() {
-            return jsondata;
-        }
-
-        public void setJsondata(ArrayList<Jsondatum> jsondata) {
-            this.jsondata = jsondata;
-        }
-
+    public ArrayList<Jsondatum> getJsondata() {
+        return jsondata;
     }
 
+    public void setJsondata(ArrayList<Jsondatum> jsondata) {
+        this.jsondata = jsondata;
+    }
+
+}
