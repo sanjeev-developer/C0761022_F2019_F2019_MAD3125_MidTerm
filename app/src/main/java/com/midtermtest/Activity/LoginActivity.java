@@ -54,6 +54,12 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
             case R.id.but_login:
 
+                if(login_email.getText().toString().equals(""))
+                {
+                    displayAlert( LoginActivity.this, "Please enter username");
+                }
+
+
         }
 
         }
