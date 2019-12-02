@@ -102,8 +102,6 @@ public class Vehicle {
         return doors;
     }
 
-    public void setDoors(Integer doors) {
-        this.doors = doors;
-    }
+   
 
 }
