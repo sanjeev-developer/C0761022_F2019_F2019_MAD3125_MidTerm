@@ -80,10 +80,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
             }
 
             @Override
-            public void onFailure(Call<Data> call, Throwable t) {
-                dialog.cancel();
-                call.cancel();
-            }
+            
 
         });
     }
