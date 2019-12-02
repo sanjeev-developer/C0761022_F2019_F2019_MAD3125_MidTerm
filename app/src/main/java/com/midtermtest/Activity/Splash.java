@@ -25,10 +25,9 @@ public class Splash extends AppCompatActivity {
 
                 } catch (InterruptedException e) {
                     e.printStackTrace();
-
-
                 }
-
-
-
             }
+        };
+        Background.start();
+    }
+}
