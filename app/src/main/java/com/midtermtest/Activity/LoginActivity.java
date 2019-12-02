@@ -38,6 +38,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     Dialog dialog;
     Intent intent;
 
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,14 +66,45 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 else
                 {
                     if(login_email.getText().toString().equals(adminUsername) && login_password.getText().toString().equals(adminPassword))
-
+                    {
+                        intent = new Intent(LoginActivity.this, Dashboard.class);
+                        startActivity(intent);
+                    }
+                    else
+                    {
+                        displayAlert(LoginActivity.this,"Please check the Username or password");
+                    }
                 }
-
+                break;
         }
-
-
     }
 
+    public  void displayAlert(Context mContext, String strMessage) {
+        //dialog intialization
+        dialog = new Dialog(mContext);
+        dialog.requestWindowFeature(Window.FEATURE_NO_TITLE);
+        getWindow().setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.MATCH_PARENT);
+        dialog.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+        dialog.setContentView(R.layout.alert_diag);
 
+        LinearLayout okplaced = (LinearLayout) dialog.findViewById(R.id.ll_alert_ok);
+        TextView alertext= (TextView) dialog.findViewById(R.id.text_alert);
+        alertext.setText(strMessage);
 
+        okplaced.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view)
+            {
+                dialog.cancel();
+            }
+        });
+        dialog.show();
+    }
 
+    @Override
+    public void onBackPressed() {
+        super.onBackPressed();
+
+        finishAffinity();
+    }
+}
