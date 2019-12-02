@@ -58,9 +58,6 @@ public class Vehicle {
         this.make = make;
     }
 
-    public String getPlate() {
-        return plate;
-    }
 
     public void setPlate(String plate) {
         this.plate = plate;
