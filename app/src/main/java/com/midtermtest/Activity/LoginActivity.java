@@ -26,3 +26,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
     @BindView(R.id.but_login)
     Button but_login;
+
+    @BindView(R.id.login_email)
+    EditText login_email;
+
