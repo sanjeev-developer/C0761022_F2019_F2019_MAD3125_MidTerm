@@ -62,6 +62,9 @@ public class Vehicle {
         return plate;
     }
 
+    public void setPlate(String plate) {
+        this.plate = plate;
+    }
 
     public String getModel() {
         return model;
