@@ -32,7 +32,6 @@ public class Vehicle {
     private String type;
     @SerializedName("doors")
     @Expose
-    private Integer doors;
 
     public String getClass_() {
         return _class;
