@@ -24,3 +24,5 @@ import butterknife.ButterKnife;
 
 public class LoginActivity extends AppCompatActivity implements View.OnClickListener {
 
+    @BindView(R.id.but_login)
+    Button but_login;
