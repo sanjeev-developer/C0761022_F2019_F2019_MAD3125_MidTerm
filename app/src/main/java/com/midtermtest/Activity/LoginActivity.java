@@ -52,6 +52,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
 
         switch (view.getId()) {
 
+            case R.id.but_login:
+
+        }
+
         }
 
 
