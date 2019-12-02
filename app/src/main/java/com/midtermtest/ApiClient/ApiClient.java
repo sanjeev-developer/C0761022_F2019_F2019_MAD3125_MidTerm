@@ -14,5 +14,8 @@ public class ApiClient {
     private static Retrofit retrofit = null;
 
     public static Retrofit getRetrofit() {
+        if (retrofit == null) {
+
+        }
 
 
