@@ -23,6 +23,10 @@ public class Splash extends AppCompatActivity {
                     Intent intent = new Intent(Splash.this, LoginActivity.class);
                     startActivity(intent);
 
+                } catch (InterruptedException e) {
+                    e.printStackTrace();
+
+
                 }
 
 
