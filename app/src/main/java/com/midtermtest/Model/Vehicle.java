@@ -8,7 +8,6 @@ public class Vehicle {
 
     @SerializedName("@class")
     @Expose
-    private String _class;
     @SerializedName("id")
     @Expose
     private Integer id;
