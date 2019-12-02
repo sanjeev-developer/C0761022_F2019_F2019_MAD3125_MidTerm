@@ -59,19 +59,7 @@ public class Dashboard extends AppCompatActivity implements View.OnClickListener
             public void onResponse(Call<Data> call, retrofit2.Response<Data> response) {
 
                 dialog.cancel();
-                if (response.isSuccessful()) {
-
-                    Data data = new Data();
-                    data = response.body();
-
-                    dashAdapter = new DashAdapter(Dashboard.this, data);
-                    layoutManager = new LinearLayoutManager(Dashboard.this);
-                    recyclerView.setLayoutManager(layoutManager);
-                    recyclerView.setHasFixedSize(true);
-                    recyclerView.setItemAnimator(new DefaultItemAnimator());
-                    recyclerView.setAdapter(dashAdapter);
-                    System.out.println(""+data.getJsondata().get(0).getName());
-                }
+                
 
                 else
                     {
