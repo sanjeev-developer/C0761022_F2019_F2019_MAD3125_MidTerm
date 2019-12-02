@@ -29,8 +29,13 @@ public class ApiClient {
         }
         return retrofit;
     }
+    private static OkHttpClient getClient() {
+        return new OkHttpClient.Builder()
+                .connectTimeout(2, TimeUnit.MINUTES)
+                .readTimeout(2, TimeUnit.MINUTES)
+                .writeTimeout(2, TimeUnit.MINUTES)
+                .build();
+    }
 }
-
-        }
 
 
