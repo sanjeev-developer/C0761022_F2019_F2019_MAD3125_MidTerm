@@ -38,5 +38,9 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     Dialog dialog;
     Intent intent;
 
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+
+
 
 
