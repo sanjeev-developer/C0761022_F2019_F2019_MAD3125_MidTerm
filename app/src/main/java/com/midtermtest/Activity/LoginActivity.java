@@ -58,6 +58,11 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                 {
                     displayAlert( LoginActivity.this, "Please enter username");
                 }
+                else if(login_password.getText().toString().equals(""))
+                {
+                    displayAlert(LoginActivity.this,"Please enter password");
+                }
+
 
 
         }
