@@ -17,6 +17,14 @@ public class Splash extends AppCompatActivity {
         Thread Background = new Thread() {
             public void run() {
 
+                try {
+                    sleep(800);
+                    finish();
+                    Intent intent = new Intent(Splash.this, LoginActivity.class);
+                    startActivity(intent);
+
+                }
+
 
 
             }
