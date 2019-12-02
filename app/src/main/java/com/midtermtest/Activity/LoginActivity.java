@@ -33,4 +33,10 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
     @BindView(R.id.login_password)
     EditText login_password;
 
+    String adminUsername = "Admin";
+    String adminPassword = "123456";
+    Dialog dialog;
+    Intent intent;
+
+
 
